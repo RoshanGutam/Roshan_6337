@@ -1,16 +1,15 @@
-package Assignement;
-/*5. Write a Java Program to remove a particular element from an array. 
- * [Solution : Program : Remove an Element from int Array in Java]
-*/
+package Array;
+
 import java.util.Scanner;
 
 public class RemoveElement {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
 		int size,loc,i;
 		Scanner sc=new Scanner(System.in);
-		System.out.println("Emter array Size: ");  //3
+		System.out.println("Enter size of "+ "array : ");  //3
 		size=sc.nextInt();                    
 		
 		int[] a=new int[size];
@@ -29,11 +28,10 @@ public class RemoveElement {
 		size--;                // size-- =1
 		for(i=0;i<size;i++)
 		{
-			System.out.println(a[i]+ " ");
+			System.out.println("After removing, the present elements are: "+a[i]);
 		}
 		
-	
-
-	}
+	} 
+	  
 
 }
